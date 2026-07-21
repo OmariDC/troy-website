@@ -162,6 +162,17 @@ h3 { font-size: clamp(1.45rem, 3vw, 2.25rem); margin-bottom: 1rem; }
 .contact-list { list-style: none; padding: 0; margin: 2rem 0; }
 .contact-list li { padding: .9rem 0; border-bottom: 1px solid var(--line); }
 .contact-list a { font-weight: 800; text-decoration-thickness: 2px; text-underline-offset: .2em; }
+.map-view { margin-top: 2rem; }
+.map-view iframe {
+  display: block;
+  width: 100%;
+  min-height: 360px;
+  border: 0;
+  border-radius: var(--radius);
+  background: #d4d0cd;
+  box-shadow: var(--shadow);
+}
+.map-view a { display: inline-block; margin-top: .8rem; font-weight: 800; text-underline-offset: .25em; }
 .form-card { padding: clamp(1.5rem, 4vw, 3rem); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); }
 .field-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
 .field { margin-bottom: 1.1rem; }
@@ -231,4 +242,3 @@ h3 { font-size: clamp(1.45rem, 3vw, 2.25rem); margin-bottom: 1rem; }
   .footer-grid > :first-child { grid-column: auto; }
   .footer-bottom { flex-direction: column; }
 }
-
