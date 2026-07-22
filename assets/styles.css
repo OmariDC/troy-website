@@ -12,7 +12,7 @@
   --shadow: 0 22px 60px rgba(5, 31, 49, 0.14);
   --radius: 1.5rem;
   --max: 1800px;
-  --section-scale: 0.66;
+  --section-scale: 0.64;
 }
 
 * { box-sizing: border-box; }
