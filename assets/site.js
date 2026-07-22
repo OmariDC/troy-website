@@ -19,7 +19,7 @@ if (header) {
     <div class="site-header">
       <div class="shell nav-wrap">
         <a class="brand" href="index.html" aria-label="Troy Shelton home">
-          <strong>T Shelton</strong><span>Psychotherapy · Coaching · Consultancy</span>
+          <strong>T Shelton Therapy</strong><span>Psychotherapy · Coaching · Consultancy</span>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation">
           <span></span><span></span><span></span>
