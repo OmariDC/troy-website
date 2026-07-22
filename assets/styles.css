@@ -164,6 +164,7 @@ body.is-scrolled .site-header {
 .service-row { display: grid; grid-template-columns: minmax(190px,.45fr) 1fr; gap: 2rem; padding: 2.2rem 0; border-bottom: 1px solid currentColor; }
 .service-row p:last-child { margin-bottom: 0; }
 .tag { display: inline-flex; padding: .35rem .65rem; border: 1px solid currentColor; border-radius: 999px; font-size: .75rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.service-row .tag { margin-bottom: .9rem; }
 .price-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 330px; padding: 2rem; border-radius: 50% 50% 2rem 2rem; background: var(--ink); color: var(--white); text-align: center; }
 .price { font-size: clamp(3rem, 7vw, 5rem); line-height: 1; font-weight: 800; }
 .notice { padding: 1rem 1.2rem; border-left: 4px solid var(--orange); background: rgba(255,141,69,.12); }
@@ -248,6 +249,7 @@ body.is-scrolled .site-header {
   .stats { border: 0; gap: .7rem; }
   .stat { border: 1px solid currentColor; border-radius: 1rem; }
   .service-row { grid-template-columns: 1fr; gap: .8rem; }
+  .service-row .tag { margin-bottom: 1.05rem; }
   .split-feature .media-slot { min-height: 470px; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-grid > :first-child { grid-column: auto; }
