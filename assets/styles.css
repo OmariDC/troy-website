@@ -12,6 +12,7 @@
   --shadow: 0 22px 60px rgba(5, 31, 49, 0.14);
   --radius: 1.5rem;
   --max: 1800px;
+  --section-scale: 0.66;
 }
 
 * { box-sizing: border-box; }
@@ -42,8 +43,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 .skip-link:focus { top: 1rem; }
 .shell { width: min(calc(100% - clamp(2rem, 6vw, 8rem)), var(--max)); margin-inline: auto; }
-.section { padding: clamp(4rem, 8vw, 8rem) 0; }
-.section--tight { padding: clamp(2.5rem, 5vw, 4.5rem) 0; }
+.section { padding: calc(clamp(4rem, 8vw, 8rem) * var(--section-scale)) 0; }
+.section--tight { padding: calc(clamp(2.5rem, 5vw, 4.5rem) * var(--section-scale)) 0; }
 .section--ink { background: var(--ink); color: var(--white); }
 .section--charcoal { background: var(--charcoal); color: var(--white); }
 .section--orange { background: var(--orange); color: var(--ink-deep); }
@@ -62,9 +63,9 @@ h1, h2, h3 {
   letter-spacing: -.045em;
   text-wrap: balance;
 }
-h1 { font-size: clamp(3.5rem, 10vw, 8.7rem); margin-bottom: 1.75rem; }
-h2 { font-size: clamp(2.5rem, 6vw, 5.5rem); margin-bottom: 1.5rem; }
-h3 { font-size: clamp(1.45rem, 3vw, 2.25rem); margin-bottom: 1rem; }
+h1 { font-size: calc(clamp(3.5rem, 10vw, 8.7rem) * var(--section-scale)); margin-bottom: calc(1.75rem * var(--section-scale)); }
+h2 { font-size: calc(clamp(2.5rem, 6vw, 5.5rem) * var(--section-scale)); margin-bottom: calc(1.5rem * var(--section-scale)); }
+h3 { font-size: calc(clamp(1.45rem, 3vw, 2.25rem) * var(--section-scale)); margin-bottom: calc(1rem * var(--section-scale)); }
 .lede { max-width: 66ch; font-size: clamp(1.15rem, 2vw, 1.45rem); }
 .display-line { display: block; }
 .accent { color: var(--orange); }
@@ -111,7 +112,7 @@ h3 { font-size: clamp(1.45rem, 3vw, 2.25rem); margin-bottom: 1rem; }
 .site-nav a:hover, .site-nav a[aria-current="page"] { background: rgba(255,255,255,.11); color: var(--orange); }
 .site-nav .nav-cta { margin-left: .4rem; background: var(--orange); color: var(--ink-deep); }
 .hero {
-  min-height: calc(100vh - 5rem);
+  min-height: calc((100vh - 5rem) * var(--section-scale));
   display: grid;
   align-items: stretch;
   background: var(--ink-deep);
@@ -119,10 +120,10 @@ h3 { font-size: clamp(1.45rem, 3vw, 2.25rem); margin-bottom: 1rem; }
   overflow: hidden;
 }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr); }
-.hero-copy { align-self: center; padding: clamp(4rem, 9vw, 8rem) max(clamp(1rem, 3vw, 4rem), calc((100vw - var(--max))/2)); padding-right: clamp(2rem, 5vw, 6rem); }
+.hero-copy { align-self: center; padding: calc(clamp(4rem, 9vw, 8rem) * var(--section-scale)) max(clamp(1rem, 3vw, 4rem), calc((100vw - var(--max))/2)); padding-right: calc(clamp(2rem, 5vw, 6rem) * var(--section-scale)); }
 .hero-copy h1 { max-width: 9ch; }
 .hero-copy .lede { max-width: 52ch; }
-.hero-media { position: relative; min-height: 680px; background: linear-gradient(145deg, var(--charcoal), #5d5d5d); overflow: hidden; }
+.hero-media { position: relative; min-height: calc(680px * var(--section-scale)); background: linear-gradient(145deg, var(--charcoal), #5d5d5d); overflow: hidden; }
 .hero-media::before { content: ""; position: absolute; inset: 9% -22% auto 6%; height: 68%; background: var(--orange); transform: rotate(-8deg); border-radius: 2rem; }
 .media-slot { position: relative; min-height: 460px; overflow: hidden; background: linear-gradient(145deg, #d4d0cd, #8c817d); }
 .media-slot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2; }
@@ -143,7 +144,7 @@ h3 { font-size: clamp(1.45rem, 3vw, 2.25rem); margin-bottom: 1rem; }
 .stat { padding: 1.5rem; border-right: 1px solid currentColor; }
 .stat:last-child { border-right: 0; }
 .stat strong { display: block; font-size: clamp(1.7rem, 4vw, 3rem); line-height: 1; margin-bottom: .6rem; }
-.page-hero { padding: clamp(5rem, 11vw, 10rem) 0 clamp(4rem, 8vw, 7rem); background: var(--ink-deep); color: var(--white); overflow: hidden; }
+.page-hero { padding: calc(clamp(5rem, 11vw, 10rem) * var(--section-scale)) 0 calc(clamp(4rem, 8vw, 7rem) * var(--section-scale)); background: var(--ink-deep); color: var(--white); overflow: hidden; }
 .page-hero h1 { max-width: 12ch; }
 .page-hero .lede { max-width: 54ch; }
 .page-hero--orange { background: var(--orange); color: var(--ink-deep); }
