@@ -49,6 +49,12 @@ if (footer) {
 
 document.querySelectorAll("[data-year]").forEach((el) => { el.textContent = new Date().getFullYear(); });
 
+const updateScrollState = () => {
+  document.body.classList.toggle("is-scrolled", window.scrollY > 28);
+};
+updateScrollState();
+window.addEventListener("scroll", updateScrollState, { passive: true });
+
 const toggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".site-nav");
 if (toggle && nav) {

@@ -103,6 +103,11 @@ h3 { font-size: calc(clamp(1.45rem, 3vw, 2.25rem) * var(--section-scale)); margi
   background: rgba(6,31,49,.96);
   color: var(--white);
   backdrop-filter: blur(18px);
+  transition: background-color .22s ease, border-color .22s ease;
+}
+body.is-scrolled .site-header {
+  border-bottom-color: rgba(255,255,255,.09);
+  background: rgba(6,31,49,.86);
 }
 .nav-wrap { min-height: 5rem; display: flex; flex-wrap: nowrap; align-items: center; justify-content: space-between; gap: 1rem; }
 .brand { display: inline-flex; flex-shrink: 0; align-items: baseline; gap: .6rem; white-space: nowrap; text-decoration: none; }
