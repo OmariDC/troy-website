@@ -111,7 +111,8 @@ body.is-scrolled .site-header {
 }
 .nav-wrap { min-height: 5rem; display: flex; flex-wrap: nowrap; align-items: center; justify-content: space-between; gap: 1rem; }
 .brand { display: inline-flex; flex-shrink: 0; align-items: baseline; gap: .6rem; white-space: nowrap; text-decoration: none; }
-.brand strong { font-size: clamp(1.35rem, 1.5vw, 1.8rem); letter-spacing: .07em; text-transform: uppercase; }
+.brand strong { display: inline-block; font-size: clamp(1.35rem, 1.5vw, 1.8rem); letter-spacing: .07em; text-transform: uppercase; transform-origin: left center; transition: transform .18s ease; }
+.brand:hover strong, .brand:focus-visible strong { transform: scale(1.08); }
 .brand span { color: var(--orange); font-size: clamp(.88rem, .95vw, 1.05rem); letter-spacing: .1em; text-transform: uppercase; }
 .nav-toggle { display: none; border: 0; background: transparent; color: inherit; padding: .7rem; cursor: pointer; }
 .nav-toggle span { display: block; width: 1.6rem; height: 2px; margin: .33rem 0; background: currentColor; }
