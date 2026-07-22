@@ -1,5 +1,7 @@
 # Troy Shelton website — first build
 
+Website: https://omaridc.github.io/troy-website/
+
 This is a dependency-free seven-page website. Open `index.html` directly or serve this folder with any static web server.
 
 ## Pages
