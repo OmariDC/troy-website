@@ -19,6 +19,7 @@
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
+  padding-top: 5rem;
   background: var(--paper);
   color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -93,8 +94,10 @@ h3 { font-size: calc(clamp(1.45rem, 3vw, 2.25rem) * var(--section-scale)); margi
 .button--light { border-color: var(--white); background: var(--white); color: var(--ink); }
 .button--ghost { background: transparent; color: currentColor; border-color: currentColor; }
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   border-bottom: 1px solid rgba(255,255,255,.12);
   background: rgba(6,31,49,.96);
@@ -103,8 +106,8 @@ h3 { font-size: calc(clamp(1.45rem, 3vw, 2.25rem) * var(--section-scale)); margi
 }
 .nav-wrap { min-height: 5rem; display: flex; flex-wrap: nowrap; align-items: center; justify-content: space-between; gap: 1rem; }
 .brand { display: inline-flex; flex-shrink: 0; align-items: baseline; gap: .6rem; white-space: nowrap; text-decoration: none; }
-.brand strong { font-size: 1.05rem; letter-spacing: .08em; text-transform: uppercase; }
-.brand span { color: var(--orange); font-size: .76rem; letter-spacing: .12em; text-transform: uppercase; }
+.brand strong { font-size: clamp(1.35rem, 1.5vw, 1.8rem); letter-spacing: .07em; text-transform: uppercase; }
+.brand span { color: var(--orange); font-size: clamp(.88rem, .95vw, 1.05rem); letter-spacing: .1em; text-transform: uppercase; }
 .nav-toggle { display: none; border: 0; background: transparent; color: inherit; padding: .7rem; cursor: pointer; }
 .nav-toggle span { display: block; width: 1.6rem; height: 2px; margin: .33rem 0; background: currentColor; }
 .site-nav { display: flex; flex-wrap: nowrap; align-items: center; gap: .2rem; }
