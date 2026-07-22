@@ -14,20 +14,20 @@ This is a dependency-free seven-page website. Open `index.html` directly or serv
 
 ## Add Troy's photographs
 
-Place the six original images in `assets/images/` using these filenames:
+The five supplied low-resolution PNG files remain stored in `assets/images/`, but they are deliberately not displayed on the website.
+
+When Troy supplies the high-resolution replacements, add them using these filenames:
 
 1. `troy-hero.webp`
 2. `troy-session.webp`
-3. `troy-standing.webp`
-4. `troy-casual.webp`
-5. `troy-seated.webp`
-6. `troy-profile.webp`
+3. `troy-how-i-work.webp`
+4. `troy-about.webp`
+5. `troy-next-step.webp`
 
-Until an image is added, the site deliberately shows a styled placeholder. Update each image's alt text once the final crop is known.
+Until those replacements are supplied, the website shows styled image placeholders. The future images will appear automatically when added with the filenames above.
 
 ## Connect the enquiry form
 
 Set `enquiryEndpoint` in `assets/site.js` to the HTTPS endpoint supplied by the chosen form provider or serverless function. Until then, the form validates normally but does not claim that an enquiry was delivered; it directs visitors to the confirmed email address instead.
 
 Do not connect the form until the Privacy Notice, enquiry-retention period, under-18 process and final service choices have been approved.
-
