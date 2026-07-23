@@ -136,6 +136,18 @@ body.is-scrolled .site-header {
 .hero-media::before { content: ""; position: absolute; inset: 9% -22% auto 6%; height: 68%; background: var(--orange); transform: rotate(-8deg); border-radius: 2rem; }
 .media-slot { position: relative; min-height: 460px; overflow: hidden; background: linear-gradient(145deg, #d4d0cd, #8c817d); }
 .media-slot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2; }
+.media-slot--cutout img { object-fit: contain; object-position: center bottom; }
+.media-slot--armchair img {
+  transform: translateY(13%) scale(1.08);
+  transform-origin: center bottom;
+}
+.media-slot--closeup img { object-position: 52% 24%; }
+.media-slot--profile img {
+  object-fit: contain;
+  object-position: left bottom;
+  transform: translate(-15%, 18%) scale(1.06);
+  transform-origin: left bottom;
+}
 .media-slot.is-missing img { display: none; }
 .media-placeholder { position: absolute; inset: 0; display: grid; place-items: end start; padding: 1.25rem; z-index: 1; color: rgba(255,255,255,.85); font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .hero-media .media-slot { position: absolute; inset: 0; min-height: 100%; background: transparent; }
@@ -166,7 +178,10 @@ body.is-scrolled .site-header {
 .service-row p:last-child { margin-bottom: 0; }
 .tag { display: inline-flex; padding: .35rem .65rem; border: 1px solid currentColor; border-radius: 999px; font-size: .75rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .service-row .tag { margin-bottom: .9rem; }
+.fees-section { padding-top: calc(clamp(2rem, 4vw, 3.5rem) * var(--section-scale)); }
+.fees-title { margin-bottom: 2rem; }
 .price-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 330px; padding: 2rem; border-radius: 50% 50% 2rem 2rem; background: var(--ink); color: var(--white); text-align: center; }
+.price-card h3 { margin-bottom: 1.75rem; color: var(--orange); font-size: clamp(1.5rem, 2.5vw, 2rem); line-height: 1.1; letter-spacing: .04em; text-transform: uppercase; }
 .price { font-size: clamp(3rem, 7vw, 5rem); line-height: 1; font-weight: 800; }
 .notice { padding: 1rem 1.2rem; border-left: 4px solid var(--orange); background: rgba(255,141,69,.12); }
 .contact-grid { display: grid; grid-template-columns: 1.28fr .72fr; gap: clamp(2rem, 7vw, 7rem); align-items: start; }
